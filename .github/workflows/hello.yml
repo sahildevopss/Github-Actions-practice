@@ -6,7 +6,7 @@ name: Hello
 
 on:
 
-workflow_dispatch:
+  workflow_dispatch:
 
 # Job tells what the workflow should do, there can be one or more than one jobs, hence we write Jobs
 
@@ -28,4 +28,4 @@ jobs:
 
       - name: Say hello to everyone
 
-      run: echo "Hello Dosto"
+        run: echo "Hello Dosto"
