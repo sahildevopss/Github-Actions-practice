@@ -1,6 +1,6 @@
 # GitHub Actions Practice
 
-##Concepts
+## Concepts
 
 ## 1.Workflows
 
