@@ -5,26 +5,26 @@ on:
 
 jobs:
   code:
-    runs-on: ubuntu:latest
+    runs-on: ubuntu-22.04
     steps:
       - name: clone the code
         run: echo "clonning the code"
 
   build:
-    runs-on: ubuntu:latest
+    runs-on: ubuntu-latest
     steps:
       - name: building using docker
         run: echo "Build the code"
 
   test:
-    runs-on: ubuntu:latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Testing the code
         run: echo "Testing the cases"
     
 
   deploy:
-    runs-on: ubuntu:latest
+    runs-on: ubuntu-22.04
     steps:
       - name: Deploy the pipeline
         run: echo "Deploying the full CI/CD pipeline"
