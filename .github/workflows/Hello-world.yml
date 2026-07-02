@@ -1,0 +1,11 @@
+name: Hello-World
+
+on:
+  workflow_dispatch:
+
+jobs:
+  say-hello:
+    steps:
+      - name: Print hello world
+      run: echo "Hello World"
+      
