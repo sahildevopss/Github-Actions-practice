@@ -5,7 +5,10 @@ on:
 
 jobs:
   say-hello:
+
+    runs-on: ubuntu-latest
+
     steps:
       - name: Print hello world
-      run: echo "Hello World"
+        run: echo "Hello World"
       
