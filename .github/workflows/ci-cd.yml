@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu:latest
     steps:
       - name: clone the code
-        run: echo "clonning the code
+        run: echo "clonning the code"
 
   build:
     runs-on: ubuntu:latest
@@ -20,8 +20,9 @@ jobs:
     runs-on: ubuntu:latest
     steps:
       - name: Testing the code
-        run: echo "Testing the cases
+        run: echo "Testing the cases"
     
+
   deploy:
     runs-on: ubuntu:latest
     steps:
