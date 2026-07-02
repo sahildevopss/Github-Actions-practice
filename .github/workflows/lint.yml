@@ -1,0 +1,17 @@
+#The goal for this workflow is whenever someone changes the code Lint will check format,syntax identation is correct or not.
+
+name: auto linter
+
+on:
+  push:
+    paths: "*.py"
+
+jobs:
+  code:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout/ clone the repo
+        uses: actions/checkout@v7 
+        
+      - name: Install Linter
+        run: pip install ruff
