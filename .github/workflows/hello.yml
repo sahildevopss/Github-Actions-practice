@@ -11,4 +11,16 @@ jobs:
         uses: actions/checkout@v7
 
       - name: say Hello
-        run: echo "Hello from Github Actions !"
+        run: echo "Hello from Github Actions!"
+
+      - name: Current Date and Time
+        run: date
+
+      - name: Branch name
+        run: echo "The current branch is ${{ github.ref_name }}"
+
+      - name: List the files
+        run: ls -la
+
+      - name: Runner OS
+        run: echo "OS: ${{ runner.os }}"
