@@ -1,0 +1,38 @@
+name: GitHub Hosted Runners
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ubuntu:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Runner information
+        run: |
+          echo "OS is Ubuntu"
+          echo "Hostname is $(hostname)"
+          echo "user is $($whoami)"
+
+  windows:
+    runs-on: windows-latest
+
+    steps:
+      - name: Runner information
+        run: |
+          Write-Output "OS is Windows"
+          Write-Output "Hostname is $env:COMPUTERNAME"
+          Write-Output "User is $env:USERNAME"
+
+  macos:
+    runs-on: macos-latest
+
+    steps:
+      - name: Runner information
+        run: |
+          echo "OS is macOS"
+          echo "Hostname is $(hostname)"
+          echo "User is $(whoami)"
+
