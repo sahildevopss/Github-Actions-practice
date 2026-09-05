@@ -16,6 +16,21 @@ jobs:
           echo "Hostname is $(hostname)"
           echo "user is $($whoami)"
 
+      - name: Installed tools
+        run: |
+          echo "Docker version is"
+          docker --version
+
+          echo "python"
+          python3 --version
+
+          echo "Node"
+          node --version
+
+          echo "Git"
+          git --version
+
+
   windows:
     runs-on: windows-latest
 
