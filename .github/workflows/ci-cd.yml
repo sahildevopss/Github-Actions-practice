@@ -27,7 +27,7 @@ jobs:
 
   deploy:
     needs: [build,test]
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - name: Deploy the pipeline
         run: echo "Deploying the full CI/CD pipeline"
